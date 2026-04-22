@@ -17,6 +17,7 @@
   --color-primary: #2c4c21;
   --color-primary-container: #436436;
   --color-on-primary: #ffffff;
+  --color-primary-light: #93D173;
   --color-primary-fixed-dim: #abd199;
 
   /* ── Secondary ─────────────────────────────────────────────── */
@@ -74,7 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 .glass {
   background: rgba(250, 247, 236, 0.80);
   backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
 }
 
 /* ── Gradient CTA utility ──────────────────────────────────────── */
@@ -107,4 +107,28 @@ h1, h2, h3, h4, h5, h6 {
 .card-ambient:hover {
   box-shadow: var(--shadow-hover);
   transform: translateY(-2px);
+}
+
+/* ── Scroll offset for fixed navbar ────────────────────────────── */
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-light);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary-fixed-dim);
 }
