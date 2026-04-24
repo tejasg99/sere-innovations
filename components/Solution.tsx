@@ -16,7 +16,7 @@ export default function Solution() {
           {/* Visual — organic shape illustration */}
           <div className="flex-1 w-full max-w-md">
             <div
-              className="relative aspect-[4/3] rounded-[2rem] overflow-hidden flex items-center justify-center"
+              className="relative aspect-4/3 rounded-4xl overflow-hidden flex items-center justify-center"
               style={{ backgroundColor: "var(--color-surface-container-low)" }}
             >
               <svg
@@ -128,7 +128,7 @@ export default function Solution() {
               {points.map((point, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <span
-                    className="flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center"
+                    className="shrink-0 w-7 h-7 rounded-full flex items-center justify-center"
                     style={{ backgroundColor: "var(--color-primary-fixed-dim)" }}
                   >
                     <svg

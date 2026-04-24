@@ -81,7 +81,7 @@ export default function Audience() {
           {audiences.map((item, i) => (
             <div
               key={i}
-              className="card-ambient flex flex-col items-center text-center gap-4 p-7 rounded-[var(--radius-lg)]"
+              className="card-ambient flex flex-col items-center text-center gap-4 p-7 rounded-(--radius-lg)"
               style={{
                 backgroundColor: "var(--color-surface-container-lowest)",
               }}

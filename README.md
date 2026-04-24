@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sere Innovations Landing Page
 
-## Getting Started
+A premium, single-page landing website for **Sere Innovations**, an agri-tech brand. The project follows the "Digital Agronomist" design philosophy, focusing on a clean, grounded, and trustworthy experience for the modern farmer.
 
-First, run the development server:
+**Key Design Principles:**
+- **The "No-Line" Rule:** Boundaries are defined by background shifts, not borders.
+- **Organic Asymmetry:** Layouts that feel natural and breathable.
+- **Tonal Layering:** Depth achieved through soft color contrasts.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+- **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Fonts:** [Manrope](https://fonts.google.com/specimen/Manrope) (Headlines) & [Public Sans](https://fonts.google.com/specimen/Public+Sans) (Body)
+- **Icons/Visuals:** SVG-based illustrations for resolution independence.
+
+## 📂 Directory Structure
+
+```text
+├── app/
+│   ├── globals.css          # Design tokens, Tailwind @theme, and utility classes
+│   ├── layout.tsx           # Root layout with Google Fonts and SEO metadata
+│   └── page.tsx             # Main entry point composing all 9 sections
+├── components/
+│   ├── Navbar.tsx           # Glassmorphic sticky navigation
+│   ├── Hero.tsx             # Hero section with primary CTA
+│   ├── Problem.tsx          # Pain points for modern farmers
+│   ├── Solution.tsx         # The Sere Innovations value proposition
+│   ├── Features.tsx         # Grid of 6 core hardware/software features
+│   ├── Benefits.tsx         # Scannable list of business advantages
+│   ├── Trust.tsx            # Credibility and brand promise
+│   ├── Audience.tsx         # Target segments (Poultry, Dairy, Horticulture)
+│   ├── CTA.tsx              # Final conversion section
+│   └── Footer.tsx           # Contact details and brand grounding
+└── public/                  # Static assets - product image
 ```
 
+## ✨ Features
+
+- **9 Isolated Sections:** Highly modular components for easy maintenance.
+- **Responsive Design:** Fully optimized for mobile, tablet, and desktop.
+- **Glassmorphism:** Elegant blur effects on the sticky navigation bar.
+- **Custom Design Tokens:** bespoke color palette (`surface`, `primary-fixed-dim`, etc.) defined in Tailwind.
+- **SEO Optimized:** Semantic HTML5 tags and meta description implementation.
+
+## 🛠️ Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/tejasg99/sere-innovations.git
+cd sere-innovations
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run the development server
+```bash
+npm run dev
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

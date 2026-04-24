@@ -17,8 +17,8 @@ export default function CTA() {
 
       <div className="max-w-6xl mx-auto px-4 md:px-8 relative z-10">
         <div
-          className="rounded-[2rem] px-6 py-16 md:px-16 md:py-20 text-center"
-          style={{ backgroundColor: "var(--color-surface-container-lowest)" }}
+          className="rounded-4xl px-6 py-16 md:px-16 md:py-20 text-center"
+          style={{ backgroundColor: "#bedfaeff" }}
         >
           <p
             className="text-xs font-semibold tracking-widest uppercase mb-3"
@@ -53,15 +53,15 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <a
               href="#"
-              className="gradient-cta text-on-primary font-semibold px-8 py-4 rounded-[var(--radius-xl)] hover:shadow-[var(--shadow-hover)] transition-all duration-200 text-base"
+              className="gradient-cta text-on-primary font-semibold px-8 py-4 rounded-(--radius-xl) hover:shadow-(--shadow-hover) transition-all duration-200 text-base"
             >
               Request a Demo
             </a>
             <a
               href="#"
-              className="font-semibold px-8 py-4 rounded-[var(--radius-xl)] transition-all duration-200 text-base"
+              className="font-semibold px-8 py-4 rounded-(--radius-xl) transition-all duration-200 text-base"
               style={{
-                backgroundColor: "var(--color-secondary-container)",
+                backgroundColor: "var(--color-on-primary)",
                 color: "var(--color-on-secondary-container)",
               }}
             >

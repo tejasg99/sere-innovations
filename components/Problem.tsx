@@ -82,13 +82,13 @@ export default function Problem() {
           {problems.map((item, i) => (
             <div
               key={i}
-              className="flex items-start gap-4 p-6 rounded-[var(--radius-lg)] transition-all duration-200"
+              className="flex items-start gap-4 p-6 rounded-(--radius-lg) transition-all duration-200"
               style={{
                 backgroundColor: "var(--color-surface-container-lowest)",
               }}
             >
               <div
-                className="flex-shrink-0 w-12 h-12 rounded-[var(--radius-md)] flex items-center justify-center"
+                className="shrink-0 w-12 h-12 rounded-md flex items-center justify-center"
                 style={{
                   backgroundColor: "var(--color-primary-fixed-dim)",
                   opacity: 0.35,

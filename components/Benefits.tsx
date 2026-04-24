@@ -63,14 +63,14 @@ export default function Benefits() {
               {benefits.map((item, i) => (
                 <div
                   key={i}
-                  className="flex gap-5 p-5 rounded-[var(--radius-lg)] transition-colors duration-200 group"
+                  className="flex gap-5 p-5 rounded-(--radius-lg) transition-colors duration-200 group"
                   style={{
                     backgroundColor: "var(--color-surface-container-low)",
                   }}
                 >
                   {/* Number pill */}
                   <div
-                    className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold"
+                    className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold"
                     style={{
                       backgroundColor: "var(--color-primary-fixed-dim)",
                       color: "var(--color-primary)",

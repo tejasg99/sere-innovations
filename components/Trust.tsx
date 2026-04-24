@@ -47,7 +47,7 @@ export default function Trust() {
             {points.map((point, i) => (
               <div key={i} className="flex items-center gap-3">
                 <span
-                  className="flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center"
+                  className="shrink-0 w-6 h-6 rounded-full flex items-center justify-center"
                   style={{ backgroundColor: "var(--color-primary-fixed-dim)" }}
                 >
                   <svg

@@ -105,13 +105,13 @@ export default function Features() {
           {features.map((feat, i) => (
             <div
               key={i}
-              className="card-ambient p-7 rounded-[var(--radius-lg)] flex flex-col gap-4"
+              className="card-ambient p-7 rounded-(--radius-lg) flex flex-col gap-4"
               style={{
                 backgroundColor: "var(--color-surface-container-lowest)",
               }}
             >
               <div
-                className="w-14 h-14 rounded-[var(--radius-md)] flex items-center justify-center"
+                className="w-14 h-14 rounded-md flex items-center justify-center"
                 style={{ backgroundColor: "var(--color-primary-fixed-dim)", opacity: 0.4 }}
               >
                 {feat.icon}
